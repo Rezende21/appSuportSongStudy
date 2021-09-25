@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/lyt_bt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt_Studying"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Estudando"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/bt_correction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Correção"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/bt_Studies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Estudado"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/song_studing"
+        android:layout_below="@id/lyt_bt"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/bt_float"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:src="@drawable/ic_add_"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"/>
+
+</RelativeLayout>
