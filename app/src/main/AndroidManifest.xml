@@ -9,8 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SupportStudySong">
-        <activity android:name=".activity.Correction_activity"></activity>
-        <activity android:name=".activity.MainActivity">
+        <activity android:name=".activity.float_Activity"></activity>
+        <activity android:name=".activity.Correction_activity" />
+        <activity android:name=".activity.Activity_Studying">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

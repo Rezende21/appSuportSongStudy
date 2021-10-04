@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".activity.MainActivity">
+    tools:context=".activity.Activity_Studying">
 
     <LinearLayout
         android:id="@+id/lyt_bt"
@@ -47,7 +47,7 @@
         android:id="@+id/bt_float"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="@android:color/holo_red_dark"
+        android:backgroundTint="@color/purple_500"
         android:src="@drawable/ic_add_"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
