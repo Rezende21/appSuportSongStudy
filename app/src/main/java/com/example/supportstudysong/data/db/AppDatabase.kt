@@ -4,12 +4,12 @@ import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-import com.example.supportstudysong.data.db.dao.hino_Dao
+import com.example.supportstudysong.data.db.dao.Hino_Dao
 
-@Database(entities = [hino_Entity::class], version = 1)
+@Database(entities = [hino_Entity::class], version = 1, exportSchema = false)
 abstract class AppDatabase: RoomDatabase() {
 
-    abstract fun hino_Dao(): hino_Dao
+    abstract fun hino_Dao(): Hino_Dao
 
     companion object{
         @Volatile
@@ -24,7 +24,7 @@ abstract class AppDatabase: RoomDatabase() {
                 val instances = Room.databaseBuilder(
                     context.applicationContext,
                     AppDatabase::class.java,
-                    "app_databese"
+                    "studying_hino"
                 ).build()
                 INSTANCE = instances
                 return instances
